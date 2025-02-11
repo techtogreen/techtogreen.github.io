@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why Choose Us?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+        .container {
+            text-align: center;
+            padding: 50px 20px;
+        }
+        .container h2 {
+            font-size: 28px;
+            color: #333;
+            position: relative;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+        .container h2::after {
+            content: '';
+            display: block;
+            width: 50%;
+            height: 4px;
+            background-color: green;
+            margin: 8px auto 0;
+            border-radius: 2px;
+        }
+        .features-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 40px;
+            max-width: 1200px;
+            margin: auto;
+            text-align: center;
+        }
+        .feature-box {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .feature-box:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .icon-box img {
+            width: 60px;
+            height: 60px;
+            transition: transform 0.3s ease;
+        }
+        .feature-box:hover .icon-box img {
+            transform: rotate(10deg) scale(1.1);
+        }
+        h3 {
+            margin-top: 15px;
+            font-size: 18px;
+            color: #333;
+        }
+        p {
+            font-size: 14px;
+            color: #666;
+        }
+        @media (max-width: 768px) {
+            .features-container {
+                grid-template-columns: 1fr;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Why Choose Us?</h2>
+    </div>
+    
+    <section class="features-container">
+        <div class="feature-box">
+            <div class="icon-box"><img src="https://cdn-icons-png.freepik.com/256/14580/14580600.png" alt="Icon"></div>
+            <h3>Solves Real-Time Problems</h3>
+            <p>Instant detection and precise identification ensure uninterrupted efficiency and accuracy.</p>
+        </div>
+        <div class="feature-box">
+            <div class="icon-box"><img src="/TechtoGreen/images/main/reduce.png" alt="Icon"></div>
+            <h3>Reduces Life Risk</h3>
+            <p>Designed to enhance safety, minimizing risks in critical environments.</p>
+        </div>
+        <div class="feature-box">
+            <div class="icon-box"><img src="https://cdn-icons-png.freepik.com/256/12862/12862275.png" alt="Icon"></div>
+            <h3>Precise Operations</h3>
+            <p>Ensures consistent, reliable results with precision in every operation.</p>
+        </div>
+        <div class="feature-box">
+            <div class="icon-box"><img src="https://cdn-icons-png.freepik.com/256/6792/6792345.png" alt="Icon"></div>
+            <h3>Autonomization</h3>
+            <p>Automates tasks, reducing human error and increasing productivity.</p>
+        </div>
+        <div class="feature-box">
+            <div class="icon-box"><img src="https://cdn-icons-png.freepik.com/256/9491/9491038.png" alt="Icon"></div>
+            <h3>Cost Effective</h3>
+            <p>Provides high-quality solutions at an affordable cost.</p>
+        </div>
+        <div class="feature-box">
+            <div class="icon-box"><img src="https://cdn-icons-png.freepik.com/256/6201/6201261.png" alt="Icon"></div>
+            <h3>Safe & Reliable</h3>
+            <p>Built for maximum safety and dependability in operations.</p>
+        </div>
+        <div class="feature-box">
+            <div class="icon-box"><img src="https://cdn-icons-png.freepik.com/256/13320/13320523.png" alt="Icon"></div>
+            <h3>Domain Knowledge</h3>
+            <p>Backed by expertise and research across multiple industries.</p>
+        </div>
+        <div class="feature-box">
+            <div class="icon-box"><img src="https://cdn-icons-png.freepik.com/256/9173/9173377.png" alt="Icon"></div>
+            <h3>Data Enhancement</h3>
+            <p>Leverages insights to optimize performance and adaptability.</p>
+        </div>
+    </section>
+</body>
+</html>

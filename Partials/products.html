@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .section-heading {
+            text-align: center;
+            font-size: 32px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            position: relative;
+            color: black; /* Force black title color */
+        }
+
+        .section-heading::after {
+            content: "";
+            display: block;
+            width: 120px;
+            height: 4px;
+            background: #248c46;
+            margin: 10px auto 0;
+        }
+
+        .products-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            max-width: 1200px;
+            margin: auto;
+            flex-wrap: wrap;
+        }
+
+        .product-card {
+            position: relative;
+            width: 30%;
+            aspect-ratio: 4 / 3;
+            border-radius: 8px;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .product-card:hover img {
+            transform: scale(1.1);
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .product-card:hover .overlay {
+            opacity: 1;
+        }
+
+        .overlay h3, .overlay p {
+            color: rgb(255, 255, 255) !important; /* Force black text color */
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        .overlay h3 {
+            font-size: 20px;
+        }
+
+        .overlay p {
+            font-size: 14px;
+        }
+
+        @media (max-width: 1024px) {
+            .product-card {
+                width: 45%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .product-card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section id="products">
+        <h2 class="section-heading">Our Products</h2>
+        <div class="products-container">
+            <a href="/TechtoGreen/Pages/ourProducts.html" class="product-card">
+                <img src="/TechtoGreen/images/main/TGD1.png" alt="TGD1">
+                <div class="overlay">
+                    <h3>TGD1</h3>
+                    <p>Click to know more</p>
+                </div>
+            </a>
+            <a href="/TechtoGreen/Pages/ourProducts.html" class="product-card">
+                <img src="/TechtoGreen/images/main/TGR1.png" alt="TGR2">
+                <div class="overlay">
+                    <h3>TGR2</h3>
+                    <p>Click to know more</p>
+                </div>
+            </a>
+            <a href="/TechtoGreen/Pages/ourProducts.html" class="product-card">
+                <img src="/TechtoGreen/images/main/TGD2.png" alt="TGD2">
+                <div class="overlay">
+                    <h3>TGD2</h3>
+                    <p>Click to know more</p>
+                </div>
+            </a>
+            <a href="/TechtoGreen/Pages/ourProducts.html" class="product-card">
+                <img src="/TechtoGreen/images/main/TGWV1.png" alt="TGWV1">
+                <div class="overlay">
+                    <h3>TGWV1</h3>
+                    <p>Click to know more</p>
+                </div>
+            </a>
+        </div>
+    </section>
+</body>
+</html>

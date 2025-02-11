@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awards & Achievements</title>
+    <link rel="stylesheet" href="/TechtoGreen/css/styles.css">
+    <script src="/TechtoGreen/JS/script.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+            scroll-behavior: smooth;
+        }
+
+        /* Banner */
+        .banner {
+            background-color: #034748;
+            height: 180px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2.2rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        /* Logo */
+        /* .logo-box {
+            width: 140px;
+            height: 140px;
+            position: absolute;
+            top: 130px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: white;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            z-index: 10;
+        }
+
+        .logo-box img {
+            width: 100%;
+        } */
+
+        /* Content Container */
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 60px 20px 40px;
+        }
+
+        /* Awards Grid */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 80px;
+        }
+
+        /* Award Card */
+        .card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover img {
+            transform: scale(1.05);
+        }
+
+        .card-info {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .card-info .year {
+            font-size: 1rem;
+            color: #666;
+            font-weight: bold;
+        }
+
+        .card-info .title {
+            font-size: 1.1rem;
+            color: #333;
+            font-weight: 600;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .banner {
+                font-size: 1.8rem;
+                height: 150px;
+            }
+
+            /* .logo-box {
+                width: 110px;
+                height: 110px;
+                top: 110px;
+            } */
+        }
+
+        @media (max-width: 576px) {
+            .banner {
+                font-size: 1.5rem;
+            }
+
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="cursor-dot"></div>
+    <div class="cursor-drone">
+        <img src="/TechtoGreen/images/main/drone.png" alt="Drone Image">
+    </div>
+
+    <header id="header"></header>
+<!-- Banner -->
+<div class="banner">Awards & Achievements</div>
+
+<!-- Logo -->
+<!-- <div class="logo-box">
+    <img src="/TechtoGreen/images/main/ttgLogo.png" alt="Logo">
+</div> -->
+
+<!-- Content -->
+<div class="container">
+    <div class="grid">
+        <div class="card">
+            <img src="/TechtoGreen/images/awards/A1.png" alt="Award">
+            <div class="card-info">
+                <p class="year">2023</p>
+                <p class="title">3rd Prize with Cash award, Kritagya Agritech Hackathon 3.0, ICAR (Indian Council of Agricultural Research) and NAHEP (National Agricultural Higher Education Project), Govt. India</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="/TechtoGreen/images/awards/A5.png" alt="Award">
+            <div class="card-info">
+                <p class="year">2024</p>
+                <p class="title">Second Prize with cash award at SEEDBRINS, organized by CIT College in Bengaluru</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="/TechtoGreen/images/awards/A3.png" alt="Award">
+            <div class="card-info">
+                <p class="year">2024</p>
+                <p class="title">First Prize with cash award at HackAP Hackathon, September, Organized by aHub, Andhra University, Visakhapatnam</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="/TechtoGreen/images/awards/A2.png" alt="Award" style="width: 300px; height: auto; object-fit: contain; display: block; margin: auto; ">
+            <div class="card-info">
+                <p class="year">2024</p>
+                <p class="title">Fourth Prize with cash award at HackAP Hackathon December, Organized by aHub, Andhra University, Visakhapatnam</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="/TechtoGreen/images/awards/A7.jpg" alt="Award">
+            <div class="card-info">
+                <p class="year">2025</p>
+                <p class="title">Second Prize with cash awards at AI Autonomous expo February, Organized by VR Siddartha College, Vijayawada</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Load Contact Content -->
+<div id="contact"></div>
+<footer id="footer"></footer>
+<script>
+    fetch('/TechtoGreen/partials/header.html')
+        .then(res => res.text())
+        .then(data => document.getElementById('header').innerHTML = data)
+        .catch(err => console.error('Header load error:', err));
+    fetch('/TechtoGreen/partials/contact.html')
+            .then(res => res.text())
+            .then(data => document.getElementById('contact').innerHTML = data)
+            .catch(err => console.error('Contact load error:', err));
+    fetch('/TechtoGreen/partials/footer.html')
+        .then(res => res.text())
+        .then(data => document.getElementById('footer').innerHTML = data)
+        .catch(err => console.error('Footer load error:', err));
+</script>
+
+</body>
+</html>

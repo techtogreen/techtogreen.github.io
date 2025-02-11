@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Vision & Mission</title>
+    <link rel="stylesheet" href="/TechtoGreen/css/styles.css">
+    <script src="/TechtoGreen/JS/script.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+            scroll-behavior: smooth;
+        }
+
+        /* Banner */
+        .banner {
+            background-color: #034748;
+            height: 180px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2.2rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="cursor-dot"></div>
+    <div class="cursor-drone">
+        <img src="/TechtoGreen/images/main/drone.png" alt="Drone Image">
+    </div>
+
+    <header id="header"></header>
+    
+    <!-- Banner -->
+    <div class="banner">Our Vision & Mission</div>
+    <!-- Load About Content -->
+    <div id="about"></div>
+    <!-- Load Core Content -->
+    <div id="core"></div>
+    <!-- Load Services Content -->
+    <div id="services"></div>
+    <!-- Load Contact Content -->
+    <div id="contact"></div>
+    
+    <footer id="footer"></footer>
+    <script>
+        fetch('/TechtoGreen/partials/header.html')
+            .then(res => res.text())
+            .then(data => document.getElementById('header').innerHTML = data)
+            .catch(err => console.error('Header load error:', err));
+        
+        fetch('/TechtoGreen/partials/about.html')
+            .then(res => res.text())
+            .then(data => document.getElementById('about').innerHTML = data)
+            .catch(err => console.error('About load error:', err));
+
+        fetch('/TechtoGreen/partials/core.html')
+            .then(res => res.text())
+            .then(data => document.getElementById('core').innerHTML = data)
+            .catch(err => console.error('core load error:', err));
+
+        fetch('/TechtoGreen/partials/services.html')
+            .then(res => res.text())
+            .then(data => document.getElementById('services').innerHTML = data)
+            .catch(err => console.error('Services load error:', err));
+
+        fetch('/TechtoGreen/partials/contact.html')
+            .then(res => res.text())
+            .then(data => document.getElementById('contact').innerHTML = data)
+            .catch(err => console.error('Contact load error:', err));
+
+        fetch('/TechtoGreen/partials/footer.html')
+            .then(res => res.text())
+            .then(data => document.getElementById('footer').innerHTML = data)
+            .catch(err => console.error('Footer load error:', err));
+    </script>
+</body>
+</html>

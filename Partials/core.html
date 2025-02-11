@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Core Values</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+        .container {
+            text-align: center;
+            padding: 50px 20px;
+        }
+        .container h2 {
+            font-size: 28px;
+            color: #333;
+            position: relative;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+        .container h2::after {
+            content: '';
+            display: block;
+            width: 50%;
+            height: 4px;
+            background-color: green;
+            margin: 8px auto 0;
+            border-radius: 2px;
+        }
+        .features-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 40px;
+            max-width: 1200px;
+            margin: auto;
+            text-align: center;
+        }
+        .feature-box {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .feature-box:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .icon-box img {
+            width: 60px;
+            height: 60px;
+            transition: transform 0.3s ease;
+        }
+        .feature-box:hover .icon-box img {
+            transform: rotate(10deg) scale(1.1);
+        }
+        h3 {
+            margin-top: 15px;
+            font-size: 18px;
+            color: #333;
+        }
+        p {
+            font-size: 14px;
+            color: #666;
+        }
+        @media (max-width: 768px) {
+            .features-container {
+                grid-template-columns: 1fr;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Core Values</h2>
+    </div>
+    
+    <section class="features-container">
+        <div class="feature-box">
+            <div class="icon-box"><img src="https://cdn-icons-png.freepik.com/256/5354/5354493.png?ga=GA1.1.1373590693.1739100622&semt=ais_hybrid" alt="Icon"></div>
+            <h3>Safety-Driven Products</h3>
+            <p>Engineered to ensure the highest level of safety for users and environments.</p>
+        </div>
+        <div class="feature-box">
+            <div class="icon-box"><img src="https://cdn-icons-png.freepik.com/256/14329/14329601.png?ga=GA1.1.1373590693.1739100622&semt=ais_hybrid" alt="Icon"></div>
+            <h3>Integrity in Design</h3>
+            <p>Built with honesty and ethical craftsmanship for reliable and trustworthy performance.</p>
+        </div>
+        <div class="feature-box">
+            <div class="icon-box"><img src="https://cdn-icons-png.freepik.com/256/15655/15655880.png?ga=GA1.1.1373590693.1739100622&semt=ais_hybrid" alt="Icon"></div>
+            <h3>Uncompromising Quality</h3>
+            <p>Products crafted to meet and exceed industry standards for durability and performance.</p>
+        </div>
+        <div class="feature-box">
+            <div class="icon-box"><img src="https://cdn-icons-png.freepik.com/256/17280/17280050.png?ga=GA1.1.1373590693.1739100622&semt=ais_hybrid" alt="Icon"></div>
+            <h3>Innovative Technology</h3>
+            <p>Incorporating the latest advancements to push the boundaries of what's possible.</p>
+        </div>
+        <div class="feature-box">
+            <div class="icon-box"><img src="https://cdn-icons-png.freepik.com/256/9491/9491038.png" alt="Icon"></div>
+            <h3>Cost-Effective Performance</h3>
+            <p>Delivering high-quality products at competitive prices, maximizing value for customers.</p>
+        </div>
+        <div class="feature-box">
+            <div class="icon-box"><img src="https://cdn-icons-png.freepik.com/256/12216/12216746.png?ga=GA1.1.1373590693.1739100622&semt=ais_hybrid" alt="Icon"></div>
+            <h3>Multitasking Capabilities</h3>
+            <p>Versatile products designed to perform multiple functions efficiently, streamlining operations.</p>
+        </div>
+        <div class="feature-box">
+            <div class="icon-box"><img src="https://cdn-icons-png.freepik.com/256/17293/17293333.png?ga=GA1.1.1373590693.1739100622&semt=ais_hybrid" alt="Icon"></div>
+            <h3>Customer-Centric Features</h3>
+            <p>Tailored with features that address the diverse needs of our clients.</p>
+        </div>
+        <div class="feature-box">
+            <div class="icon-box"><img src="https://cdn-icons-png.freepik.com/256/13104/13104611.png?ga=GA1.1.1373590693.1739100622&semt=ais_hybrid" alt="Icon"></div>
+            <h3>Eco-Conscious Engineering</h3>
+            <p>Designed with sustainability in mind, reducing environmental impact while maintaining performance.</p>
+        </div>
+    </section>
+</body>
+</html>

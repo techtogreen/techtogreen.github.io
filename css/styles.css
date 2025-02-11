@@ -1,0 +1,422 @@
+/* Hide the default cursor */
+body {
+    cursor: none;
+}
+
+/* Cursor Dot */
+.cursor-dot {
+    position: fixed;
+    width: 5px;
+    height: 5px;
+    background-color: rgb(0, 0, 0); /* Customize */
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: transform 0.1s linear;
+    z-index: 9999;
+}
+
+/* Cursor Drone */
+.cursor-drone {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: transform 0.15s linear;
+    z-index: 9999;
+}
+
+.cursor-drone img {
+    width: 100%;
+    height: auto;
+}
+
+/* Cursor end ------------------------------------ */
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 15px 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    height: 80px;
+    /* Ensures consistent navbar height */
+    z-index: 1000;
+}
+
+/* Logo */
+.logo {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+}
+
+.logo img {
+    height: 65px;
+    /* Adjust as needed */
+    display: block;
+}
+
+/* Navbar Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+/* Navbar Items */
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 15px;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+}
+
+/* Hover Effect */
+.nav-links a:hover {
+    color: #248c46;
+}
+
+.nav-links a::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0%;
+    background: #248c46;
+    transition: width 0.3s ease-in-out;
+    margin-top: 2px;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+/* Dropdown */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    width: 220px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    display: none;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    z-index: 1100;
+}
+
+.dropdown-menu li {
+    padding: 10px 20px;
+}
+
+.dropdown-menu a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.dropdown-menu a:hover {
+    background: #248c46;
+    color: white;
+    border-radius: 4px;
+}
+
+/* Show Dropdown on Hover */
+.dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Mobile Responsive */
+.menu-toggle {
+    display: none;
+    font-size: 26px;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Mobile Navbar */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        display: none;
+        width: 100%;
+        text-align: center;
+        background: white;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        padding: 10px 0;
+    }
+
+    .nav-links.nav-active {
+        display: flex;
+    }
+
+    .dropdown .dropdown-menu {
+        display: none;
+        position: relative;
+        /* Fixes mobile dropdown positioning */
+        box-shadow: none;
+        width: auto;
+        opacity: 1;
+        transform: none;
+    }
+
+    .dropdown.active .dropdown-menu {
+        display: block;
+        /* Ensures dropdown opens when clicked */
+    }
+}
+
+
+/* Header end */
+
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Section Heading */
+.section-heading {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 600;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+/* Green Underline */
+.section-heading::after {
+    content: "";
+    display: block;
+    width: 120px;
+    height: 4px;
+    background: #248c46;
+    margin: 10px auto 0;
+}
+
+/* Layout */
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    gap: 40px;
+    padding: 20px; /* Added padding for better spacing */
+}
+
+/* Slideshow */
+.slideshow-container {
+    position: relative;
+    width: 48%;
+    max-width: 600px;
+}
+
+.slides img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* Navigation Arrows */
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 12px;
+    border-radius: 50%;
+    transition: background 0.3s ease;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev:hover,
+.next:hover {
+    background: #248c46;
+}
+
+/* Text Container */
+.text-container {
+    width: 48%;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* Hide More Text Initially */
+#moreText {
+    display: none;
+}
+
+/* More... Inline Text */
+#moreBtn {
+    background: none;
+    border: none;
+    color: #248c46;
+    cursor: pointer;
+    font-size: inherit;
+    font-weight: 600;
+    padding: 0;
+    text-decoration: underline;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+    .content-container {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .slideshow-container,
+    .text-container {
+        width: 90%; /* Expand to take full width */
+    }
+
+    .prev, .next {
+        font-size: 24px;
+        padding: 8px;
+    }
+}
+
+/* Loading CSS ------------------ */
+
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: opacity 0.5s ease-in-out; /* Smooth fade */
+}
+
+.loader-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center everything */
+    opacity: 0;
+    transform: translateY(20px); /* Slight downward offset */
+    animation: fadeIn 3s forwards;
+}
+
+.center-content {
+    display: flex;
+    align-items: center; /* Keep drone and text in a single line */
+    justify-content: center; /* Center the whole content */
+    position: relative; /* Needed for proper alignment */
+}
+
+.drone {
+    width: 80px; /* Adjust size */
+    margin-right: 15px; /* Add spacing between drone and brand name */
+}
+
+.brand-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align brand name and tagline from the same position */
+}
+
+.brand-name {
+    font-size: 5rem;
+    color: #282525;
+    opacity: 0;
+    animation: fadeInText 2s 1.5s forwards;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: left; /* Align left so tagline matches */
+    white-space: nowrap; /* Prevents wrapping */
+}
+
+.tagline {
+    font-size: 2rem;
+    color: #666;
+    margin-top: -5px; /* Reduce gap between brand name and tagline */
+    opacity: 0;
+    animation: fadeInText 2s 2s forwards;
+    text-align: left; /* Keep it aligned with brand name */
+}
+
+/* Animations */
+@keyframes flyLeft {
+    0% { right: -100vw; }
+    100% { right: 0; }
+}
+
+@keyframes fadeInText {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Hide Preloader After Animation */
+@keyframes hidePreloader {
+    0% { opacity: 1; }
+    100% { opacity: 0; visibility: hidden; }
+}

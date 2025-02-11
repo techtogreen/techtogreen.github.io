@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer with Popup</title>
+    <script src="/TechtoGreen/JS/script.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        .footer {
+            background-color: #004D47;
+            color: white;
+            padding: 40px 10%;
+            text-align: left;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .footer div {
+            flex: 1;
+            min-width: 280px;
+            margin-bottom: 20px;
+        }
+        .footer h3 {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .footer p, .footer a {
+            font-size: 16px;
+            color: #D9D9D9;
+            text-decoration: none;
+            line-height: 1.5;
+        }
+        .footer a:hover {
+            color: #1BAA80;
+        }
+        .social-icons {
+            margin-top: 15px;
+            display: flex;
+            gap: 15px;
+        }
+        .social-icons a {
+            color: rgb(155, 154, 154);
+            font-size: 24px;
+            transition: color 0.3s;
+        }
+        .social-icons a:hover {
+            color: #1BAA80;
+        }
+        .footer-bottom {
+            text-align: center;
+            padding: 10px;
+            font-size: 14px;
+        }
+
+        /* Popup Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
+            justify-content: center;
+            align-items: center;
+        }
+        .modal-content {
+            background: white;
+            padding: 20px;
+            width: 50%;
+            max-width: 600px;
+            border-radius: 10px;
+            text-align: center;
+            position: relative;
+        }
+        .modal-content h2 {
+            margin-bottom: 10px;
+            color: #004D47;
+        }
+        .modal-content p {
+            font-size: 14px;
+            color: #333;
+            text-align: justify;
+        }
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            font-size: 20px;
+            cursor: pointer;
+            color: red;
+        }
+        /* Mobile Optimization */
+        @media (max-width: 768px) {
+            .footer {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                padding: 30px 5%;
+            }
+            .social-icons {
+                justify-content: center;
+            }
+            .modal-content {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <footer class="footer">
+        <div>
+            <h3>Address</h3>
+            <p>3rd Floor, Flat-3A, 221/1,<br> R.N. Tagore Road,<br>
+            Bediapara, Kolkata,<br>
+            West Bengal - 700077</p>
+
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/company/techtogreen/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.youtube.com/@techtogreen" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="mailto:techtogreen02@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+
+        <div>
+            <h3>Main Links</h3>
+            <p><a href="/TechtoGreen/index.html">Home</a></p>
+            <p><a href="/TechtoGreen/Pages/ourVision.html">About Us</a></p>
+            <p><a href="/TechtoGreen/Pages/ourProducts.html">Products & Services</a></p>
+        </div>
+
+        <div>
+            <h3>Quick Links</h3>
+            <p><a href="/TechtoGreen/Pages/ourVision.html">Vision & Mission</a></p>
+            <p><a href="/TechtoGreen/Pages/awards.html">Media</a></p>
+        </div>
+    </footer>
+
+    <div class="footer-bottom">
+        © 2025 TechtoGreen. All Rights Reserved. | 
+        <a href="#" onclick="openModal('terms')">Terms of Use</a> | 
+        <a href="#" onclick="openModal('privacy')">Privacy Policy</a>
+    </div>
+
+    <!-- Popup Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-text"></p>
+        </div>
+    </div>
+
+</body>
+</html>

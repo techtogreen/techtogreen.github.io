@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        h2 {
+            text-align: center;
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            position: relative;
+        }
+        h2::after {
+            content: "";
+            display: block;
+            width: 60px;
+            height: 4px;
+            background: #1baa80;
+            margin: 10px auto 0;
+            border-radius: 2px;
+        }
+        .contact-section {
+            width: 90%;
+            max-width: 1100px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+        .contact-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+        .contact-left {
+            flex: 0.8;
+            min-width: 280px;
+        }
+        .contact-right {
+            flex: 1.5;
+            min-width: 480px;
+        }
+        .contact-left h3, .contact-right h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: #333;
+            font-weight: bold;
+        }
+        .contact-info {
+            font-size: 16px;
+            color: #444;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+        .social-icons a {
+            color: #201e1e;
+            font-size: 22px;
+            margin-right: 15px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+        .social-icons a:hover {
+            color: #1baa80;
+        }
+        .form-group {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+        }
+        .form-group input, .form-group select, .form-group textarea {
+            flex: 1;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            width: 100%;
+            transition: border 0.3s;
+        }
+        .form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+            border-color: #1baa80;
+            outline: none;
+        }
+        .form-group textarea {
+            height: 120px;
+            resize: none;
+        }
+        .btn {
+            background: #1baa80;
+            color: white;
+            padding: 14px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+            width: 100%;
+            transition: 0.3s;
+        }
+        .btn:hover {
+            background: #178d68;
+        }
+        @media (max-width: 900px) {
+            .contact-container {
+                flex-direction: column;
+                gap: 30px;
+            }
+            .contact-left {
+                width: 100%;
+                text-align: center;
+            }
+            .contact-right {
+                width: 100%;
+            }
+            .form-group {
+                flex-direction: column;
+                gap: 10px;
+            }
+            .contact-section {
+                width: 95%;
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div id="contact-section" class="contact-section">
+        <h2>Get in Touch</h2>
+
+        <div class="contact-container">
+            <div class="contact-left">
+                <h3>Address</h3>
+                <p class="contact-info">
+                    3rd Floor, Flat-3A, 221/1,<br>R.N. Tagore Road, Bediapara,<br>
+                    Kolkata, West Bengal - 700077<br>techtogreen02@gmail.com
+                </p>
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/company/techtogreen/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.youtube.com/@techtogreen"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="mailto:techtogreen02@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
+
+            <div class="contact-right">
+                <h3>Send us a note</h3>
+                <form>
+                    <div class="form-group">
+                        <input type="text" placeholder="Name*" required>
+                        <input type="email" placeholder="Email*" required>
+                    </div>
+                    <div class="form-group">
+                        <select required>
+                            <option value="" disabled selected>Subject*</option>
+                            <option value="business">Business/Inspection Enquiry</option>
+                            <option value="product">Product Inquiry</option>
+                            <option value="collaboration">Collaboration Inquiry</option>
+                            <option value="vendor">Vendor Inquiry</option>
+                        </select>
+                        <input type="tel" placeholder="Mobile No.*" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Type your message...*" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

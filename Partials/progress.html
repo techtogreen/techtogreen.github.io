@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechtoGreen Progress</title>
+    
+</head>
+<body><br>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Section Heading */
+.section-heading {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+/* Green Underline */
+.section-heading::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 4px;
+    background: #248c46;
+    margin: 10px auto;
+}
+
+/* Progress Container */
+.progress-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding: 40px;
+}
+
+/* Progress Items */
+.progress-item {
+    text-align: center;
+    width: 220px;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Icon Images */
+.progress-item img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 15px;
+}
+
+/* Number Count */
+.progress-item h3 {
+    font-size: 50px;
+    font-weight: 700;
+    color: #6e706e;
+}
+
+/* Description Text */
+.progress-item p {
+    font-size: 18px;
+    font-weight: 500;
+    color: #000000;
+}
+
+/* Hover Effect */
+.progress-item:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .progress-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+    </style>
+
+    <section class="progress-section" id="progressSection">
+        <h2 class="section-heading">TechtoGreen's Progress</h2>
+
+        <div class="progress-container">
+            <div class="progress-item">
+                <img src="https://cdn-icons-png.freepik.com/256/18508/18508463.png" alt="Experience Icon">
+                <h3 class="counter" data-target="7">0</h3>
+                <p>Years Experience</p>
+            </div>
+
+            <div class="progress-item">
+                <img src="https://cdn-icons-png.freepik.com/256/15293/15293658.png" alt="Patents Icon">
+                <h3 class="counter" data-target="10">0</h3>
+                <p>Patents</p>
+            </div>
+
+            <div class="progress-item">
+                <img src="https://cdn-icons-png.freepik.com/256/12945/12945215.png" alt="Projects Icon">
+                <h3 class="counter" data-target="15">0</h3>
+                <p>Projects Done</p>
+            </div>
+
+            <div class="progress-item">
+                <img src="https://cdn-icons-png.freepik.com/256/11921/11921500.png" alt="Awards Icon">
+                <h3 class="counter" data-target="20">0</h3>
+                <p>Awards</p>
+            </div>
+        </div>
+    </section>
+    <script defer src="/TechtoGreen/JS/progress.js"></script>
+</body>
+</html>
