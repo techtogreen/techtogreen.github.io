@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Vision & Mission</title>
+    <link rel="stylesheet" href="../css/styles.css">
+
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -32,55 +34,58 @@
 </head>
 <body>
 
-    <div class="cursor-dot"></div>
-    <div class="cursor-drone">
-        <img src="../images/main/drone.png" alt="Drone Image">
-    </div>
+<div class="cursor-dot"></div>
+<div class="cursor-drone">
+    <img src="../images/main/drone.png" alt="Drone Image">
+</div>
 
-    <header id="header"></header>
-    
-    <!-- Banner -->
-    <div class="banner">Our Vision & Mission</div>
-    <!-- Load About Content -->
-    <div id="about"></div>
-    <!-- Load Core Content -->
-    <div id="core"></div>
-    <!-- Load Services Content -->
-    <div id="services"></div>
-    <!-- Load Contact Content -->
-    <div id="contact"></div>
-    
-    <footer id="footer"></footer>
-    <script>
-        fetch('../Partials/header.html')
-            .then(res => res.text())
-            .then(data => document.getElementById('header').innerHTML = data)
-            .catch(err => console.error('Header load error:', err));
-        
-        fetch('../Partials/about.html')
-            .then(res => res.text())
-            .then(data => document.getElementById('about').innerHTML = data)
-            .catch(err => console.error('About load error:', err));
+<header id="header"></header>
 
-        fetch('../Partials/core.html')
-            .then(res => res.text())
-            .then(data => document.getElementById('core').innerHTML = data)
-            .catch(err => console.error('core load error:', err));
+<!-- Banner -->
+<div class="banner">Our Vision & Mission</div>
+<!-- Load About Content -->
+<div id="about"></div>
+<!-- Load Core Content -->
+<div id="core"></div>
+<!-- Load Services Content -->
+<div id="services"></div>
+<!-- Load Contact Content -->
+<div id="contact"></div>
 
-        fetch('../Partials/services.html')
-            .then(res => res.text())
-            .then(data => document.getElementById('services').innerHTML = data)
-            .catch(err => console.error('Services load error:', err));
+<footer id="footer"></footer>
+<script>
+    fetch('../Partials/header.html')
+        .then(res => res.text())
+        .then(data => document.getElementById('header').innerHTML = data)
+        .catch(err => console.error('Header load error:', err));
 
-        fetch('../Partials/contact.html')
-            .then(res => res.text())
-            .then(data => document.getElementById('contact').innerHTML = data)
-            .catch(err => console.error('Contact load error:', err));
+    fetch('../Partials/about.html')
+        .then(res => res.text())
+        .then(data => document.getElementById('about').innerHTML = data)
+        .catch(err => console.error('About load error:', err));
 
-        fetch('../Partials/footer.html')
-            .then(res => res.text())
-            .then(data => document.getElementById('footer').innerHTML = data)
-            .catch(err => console.error('Footer load error:', err));
-    </script>
+    fetch('../Partials/core.html')
+        .then(res => res.text())
+        .then(data => document.getElementById('core').innerHTML = data)
+        .catch(err => console.error('core load error:', err));
+
+    fetch('../Partials/services.html')
+        .then(res => res.text())
+        .then(data => document.getElementById('services').innerHTML = data)
+        .catch(err => console.error('Services load error:', err));
+
+    fetch('../Partials/contact.html')
+        .then(res => res.text())
+        .then(data => document.getElementById('contact').innerHTML = data)
+        .catch(err => console.error('Contact load error:', err));
+
+    fetch('../Partials/footer.html')
+        .then(res => res.text())
+        .then(data => document.getElementById('footer').innerHTML = data)
+        .catch(err => console.error('Footer load error:', err));
+</script>
+<script src="../JS/script.js"></script>
+
+<script src="../JS/slideshow.js"></script>
 </body>
 </html>
