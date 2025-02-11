@@ -338,6 +338,13 @@ body {
 }
 
 /* Loading CSS ------------------ */
+@media (max-width: 900px) {
+
+    .preloader {
+        visibility: hidden;
+    }
+
+}
 
 .preloader {
     position: fixed;
@@ -401,45 +408,63 @@ body {
 
 /* Animations */
 @keyframes fadeInText {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 @keyframes fadeIn {
-    0% { opacity: 0; transform: translateY(20px); }
-    100% { opacity: 1; transform: translateY(0); }
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* Responsive Design */
-@media (max-width: 1024px) { /* Tablets */
+@media (max-width: 1024px) {
+    /* Tablets */
     .brand-name {
         font-size: 4rem;
     }
+
     .tagline {
         font-size: 1.8rem;
     }
+
     .drone {
         width: 70px;
         margin-right: 10px;
     }
 }
 
-@media (max-width: 768px) { /* Mobile devices */
+@media (max-width: 768px) {
+    /* Mobile devices */
     .center-content {
         flex-direction: column;
         text-align: center;
     }
+
     .drone {
         width: 60px;
         margin: 0 auto 10px;
     }
+
     .brand-text {
         align-items: center;
     }
+
     .brand-name {
         font-size: 3rem;
         text-align: center;
     }
+
     .tagline {
         font-size: 1.5rem;
         text-align: center;

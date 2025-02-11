@@ -9,6 +9,17 @@
 
 </head>
 <body>
+
+<style>
+    @media (max-width: 900px) {
+
+        .cursor-dot, .cursor-drone {
+            visibility: hidden;
+            display: none;
+
+        }
+    }
+</style>
 <div class="preloader">
     <div class="loader-container">
         <div class="center-content">
@@ -20,19 +31,6 @@
         </div>
     </div>
 </div>
-<style>
-    @media (max-width: 900px) {
-        * {
-            overflow-x: hidden;
-        }
-
-        .cursor-dot, .cursor-drone {
-            visibility: hidden;
-            display: none;
-
-        }
-    }
-</style>
 <div class="cursor-dot"></div>
 <div class="cursor-drone">
     <img src="/images/main/drone.png" alt="Drone Image">
@@ -64,9 +62,11 @@
 <script>
 
     // Load header.html from Partials folder
-    fetch("Partials/header.html")
-        .then(response => response.text())
-        .then(data => document.getElementById("header").innerHTML = data);
+
+    fetch('Partials/header.html')
+        .then(res => res.text())
+        .then(data => document.getElementById('header').innerHTML = data)
+        .catch(err => console.error('Header load error:', err));
 
     // Load home.html from Partials folder
     fetch("Partials/home.html")
