@@ -199,15 +199,15 @@
 <div id="contact"></div>
 <footer id="footer"></footer>
 <script>
-    fetch('../partials/header.html')
+    fetch('../Partials/header.html')
         .then(res => res.text())
         .then(data => document.getElementById('header').innerHTML = data)
         .catch(err => console.error('Header load error:', err));
-    fetch('../partials/contact.html')
+    fetch('../Partials/contact.html')
             .then(res => res.text())
             .then(data => document.getElementById('contact').innerHTML = data)
             .catch(err => console.error('Contact load error:', err));
-    fetch('../partials/footer.html')
+    fetch('../Partials/footer.html')
         .then(res => res.text())
         .then(data => document.getElementById('footer').innerHTML = data)
         .catch(err => console.error('Footer load error:', err));
