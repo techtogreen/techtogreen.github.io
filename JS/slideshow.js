@@ -1,8 +1,8 @@
 
 // Slideshow
 let slideIndex;
+document.addEventListener("DOMContentLoaded", async function() {
 
-document.addEventListener("DOMContentLoaded", function() {
     document.querySelectorAll(".dropdown > a").forEach((dropdown) => {
       dropdown.addEventListener("click", function (e) {
         e.preventDefault();
@@ -14,8 +14,8 @@ document.addEventListener("DOMContentLoaded", function() {
     
   });
 // Next/Prev Controls
-function plusSlides(n) {
-  showSlides((slideIndex += n));
+async function plusSlides(n) {
+  await showSlides((slideIndex += n));
 }
 
 setTimeout(() => {
@@ -23,7 +23,7 @@ setTimeout(() => {
 }, 100);
 
 // Show Specific Slide
-function showSlides(n) {
+async function showSlides(n) {
   let slides = document.getElementsByClassName("slides");
   if (n > slides.length) {
     slideIndex = 1;
@@ -34,6 +34,7 @@ function showSlides(n) {
   for (let i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
+  await sleep(100)
   slides[slideIndex - 1].style.display = "block";
 }
 

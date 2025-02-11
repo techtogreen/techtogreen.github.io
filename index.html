@@ -9,86 +9,99 @@
 
 </head>
 <body>
-    <div class="preloader">
-        <div class="loader-container">
-            <div class="center-content">
-                <img src="https://img.icons8.com/?size=96&id=21921&format=png" alt="Drone" class="drone">
-                <div class="brand-text">
-                    <h1 class="brand-name">TechtoGreen</h1>
-                    <p class="tagline">Drone & Robotics Pvt. Ltd.</p>
-                </div>
+<div class="preloader">
+    <div class="loader-container">
+        <div class="center-content">
+            <img src="https://img.icons8.com/?size=96&id=21921&format=png" alt="Drone" class="drone">
+            <div class="brand-text">
+                <h1 class="brand-name">TechtoGreen</h1>
+                <p class="tagline">Drone & Robotics Pvt. Ltd.</p>
             </div>
         </div>
-    </div>    
-
-    <div class="cursor-dot"></div>
-    <div class="cursor-drone">
-        <img src="/TechtoGreen/images/main/drone.png" alt="Drone Image">
     </div>
-    <!-- Load Header -->
-    <div id="header"></div>
+</div>
+<style>
+    @media (max-width: 900px) {
+        * {
+            overflow-x: hidden;
+        }
 
-    <!-- Load Home Content -->
-    <div id="home"></div>
+        .cursor-dot, .cursor-drone {
+            visibility: hidden;
+            display: none;
 
-    <!-- Load About Content -->
-    <div id="about"></div>
+        }
+    }
+</style>
+<div class="cursor-dot"></div>
+<div class="cursor-drone">
+    <img src="/images/main/drone.png" alt="Drone Image">
+</div>
+<!-- Load Header -->
+<div id="header"></div>
 
-    <!-- Load Progress Content -->
-    <div id="progress"></div>
+<!-- Load Home Content -->
+<div id="home"></div>
 
-    <!-- Load Products Content -->
-    <div id="products"></div>
+<!-- Load About Content -->
+<div id="about"></div>
 
-    <!-- Load Services Content -->
-    <div id="services"></div>
+<!-- Load Progress Content -->
+<div id="progress"></div>
 
-    <!-- Load Contact Content -->
-    <div id="contact"></div>
+<!-- Load Products Content -->
+<div id="products"></div>
 
-    <!-- Load Footer Content -->
-    <div id="footer"></div>
+<!-- Load Services Content -->
+<div id="services"></div>
 
-    <script>
-        
-        // Load header.html from Partials folder
-        fetch("Partials/header.html")
-            .then(response => response.text())
-            .then(data => document.getElementById("header").innerHTML = data);
+<!-- Load Contact Content -->
+<div id="contact"></div>
 
-        // Load home.html from Partials folder
-        fetch("Partials/home.html")
-            .then(response => response.text())
-            .then(data => document.getElementById("home").innerHTML = data);
-        // Load about.html from Partials folder
-        fetch("Partials/about.html")
-            .then(response => response.text())
-            .then(data => document.getElementById("about").innerHTML = data);
-        // Load progress.html from Partials folder
-        fetch("Partials/progress.html")
-            .then(response => response.text())
-            .then(data => document.getElementById("progress").innerHTML = data);
-        // Load products.html from Partials folder
-        fetch("Partials/products.html")
-            .then(response => response.text())
-            .then(data => document.getElementById("products").innerHTML = data);
-        // Load services.html from Partials folder
-        fetch("Partials/services.html")
-            .then(response => response.text())
-            .then(data => document.getElementById("services").innerHTML = data);
-        // Load contact.html from Partials folder
-        fetch("Partials/contact.html")
-            .then(response => response.text())
-            .then(data => document.getElementById("contact").innerHTML = data);
-        // Load footer.html from Partials folder
-        fetch("Partials/footer.html")
-            .then(response => response.text())
-            .then(data => document.getElementById("footer").innerHTML = data);
-            
-    </script>
-    <script src="/JS/script.js" loading="lazy"></script>
-    <script src="/JS/progress.js" loading="lazy"></script>
-    <script src="/JS/slideshow.js" loading="lazy"></script>
+<!-- Load Footer Content -->
+<div id="footer"></div>
+
+<script>
+
+    // Load header.html from Partials folder
+    fetch("Partials/header.html")
+        .then(response => response.text())
+        .then(data => document.getElementById("header").innerHTML = data);
+
+    // Load home.html from Partials folder
+    fetch("Partials/home.html")
+        .then(response => response.text())
+        .then(data => document.getElementById("home").innerHTML = data);
+    // Load about.html from Partials folder
+    fetch("Partials/about.html")
+        .then(response => response.text())
+        .then(data => document.getElementById("about").innerHTML = data);
+    // Load progress.html from Partials folder
+    fetch("Partials/progress.html")
+        .then(response => response.text())
+        .then(data => document.getElementById("progress").innerHTML = data);
+    // Load products.html from Partials folder
+    fetch("Partials/products.html")
+        .then(response => response.text())
+        .then(data => document.getElementById("products").innerHTML = data);
+    // Load services.html from Partials folder
+    fetch("Partials/services.html")
+        .then(response => response.text())
+        .then(data => document.getElementById("services").innerHTML = data);
+    // Load contact.html from Partials folder
+    fetch("Partials/contact.html")
+        .then(response => response.text())
+        .then(data => document.getElementById("contact").innerHTML = data);
+    // Load footer.html from Partials folder
+    fetch("Partials/footer.html")
+        .then(response => response.text())
+        .then(data => document.getElementById("footer").innerHTML = data);
+
+</script>
+<script src="/JS/script.js" onerror="console.error('Failed to load script.js');"></script>
+<script src="/JS/slideshow.js" onerror="console.error('Failed to load slideshow.js');"></script>
+<script src="/JS/progress.js" onerror="console.error('Failed to load progress.js');"></script>
+
 
 </body>
 </html>
