@@ -1,0 +1,328 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--  <meta charset="UTF-8">-->
+<!--  <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+<!--  <title>Blog</title>-->
+<!--  <link rel="stylesheet" href="../css/styles.css">-->
+<!--  <script src="../JS/script.js"></script>-->
+<!--  <style>-->
+<!--    body {-->
+<!--      font-family: Arial, sans-serif;-->
+<!--      margin: 0;-->
+<!--      padding: 0;-->
+<!--      background-color: #f8f9fa;-->
+<!--      color: #333;-->
+<!--      scroll-behavior: smooth;-->
+<!--    }-->
+
+<!--    /* Banner */-->
+<!--    .banner {-->
+<!--      background-color: #034748;-->
+<!--      height: 180px;-->
+<!--      color: white;-->
+<!--      display: flex;-->
+<!--      justify-content: center;-->
+<!--      align-items: center;-->
+<!--      font-size: 2.2rem;-->
+<!--      font-weight: bold;-->
+<!--      text-transform: uppercase;-->
+<!--      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);-->
+<!--      text-align: center;-->
+<!--    }-->
+
+<!--    /* Logo */-->
+<!--    /* .logo-box {-->
+<!--        width: 140px;-->
+<!--        height: 140px;-->
+<!--        position: absolute;-->
+<!--        top: 130px;-->
+<!--        left: 50%;-->
+<!--        transform: translateX(-50%);-->
+<!--        background-color: white;-->
+<!--        border-radius: 50%;-->
+<!--        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);-->
+<!--        display: flex;-->
+<!--        justify-content: center;-->
+<!--        align-items: center;-->
+<!--        overflow: hidden;-->
+<!--        z-index: 10;-->
+<!--    }-->
+
+<!--    .logo-box img {-->
+<!--        width: 100%;-->
+<!--    } */-->
+
+<!--    /* Content Container */-->
+<!--    .container {-->
+<!--      max-width: 1200px;-->
+<!--      margin: auto;-->
+<!--      padding: 0 20px 40px;-->
+<!--    }-->
+
+<!--    /* Awards Grid */-->
+<!--    .grid {-->
+<!--      display: grid;-->
+<!--      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));-->
+<!--      gap: 30px;-->
+<!--      margin-top: 80px;-->
+<!--    }-->
+<!--    .container .grid .card img {-->
+<!--      width: 100%;-->
+<!--      height: 250px; /* Maintain the 5:4 aspect ratio */-->
+<!--      object-fit: contain; /* Ensures the entire image fits without cropping */-->
+<!--      background-color: white; /* Keeps the white background */-->
+<!--    }-->
+
+<!--    /* Award Card */-->
+<!--    .card {-->
+<!--      text-decoration: none;-->
+<!--      color: inherit;-->
+<!--      display: block;-->
+<!--      background: white;-->
+<!--      border-radius: 10px;-->
+<!--      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);-->
+<!--      overflow: hidden;-->
+<!--      transition: transform 0.3s ease, box-shadow 0.3s ease;-->
+<!--    }-->
+
+<!--    .card:hover {-->
+<!--      transform: translateY(-8px);-->
+<!--      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);-->
+<!--    }-->
+
+<!--    .card img {-->
+<!--      width: 100%;-->
+<!--      height: 200px;-->
+<!--      object-fit: cover;-->
+<!--      transition: transform 0.3s ease;-->
+<!--    }-->
+
+<!--    .card:hover img {-->
+<!--      transform: scale(1.05);-->
+<!--    }-->
+
+<!--    .card-info {-->
+<!--      padding: 15px;-->
+<!--      text-align: center;-->
+<!--    }-->
+
+<!--    .card-info .year {-->
+<!--      font-size: 1rem;-->
+<!--      color: #666;-->
+<!--      font-weight: bold;-->
+<!--    }-->
+
+<!--    .card-info .title {-->
+<!--      font-size: 1.1rem;-->
+<!--      color: #333;-->
+<!--      font-weight: 600;-->
+<!--    }-->
+
+<!--    /* Responsive */-->
+<!--    @media (max-width: 768px) {-->
+<!--      .banner {-->
+<!--        font-size: 1.8rem;-->
+<!--        height: 150px;-->
+<!--      }-->
+
+<!--      /* .logo-box {-->
+<!--          width: 110px;-->
+<!--          height: 110px;-->
+<!--          top: 110px;-->
+<!--      } */-->
+<!--    }-->
+
+<!--    @media (max-width: 576px) {-->
+<!--      .banner {-->
+<!--        font-size: 1.5rem;-->
+<!--      }-->
+
+<!--      .grid {-->
+<!--        grid-template-columns: 1fr;-->
+<!--      }-->
+<!--    }-->
+<!--  </style>-->
+<!--</head>-->
+<!--<body>-->
+
+<!--<div class="cursor-dot"></div>-->
+<!--<div class="cursor-drone">-->
+<!--  <img src="../images/main/drone.png" alt="Drone Image">-->
+<!--</div>-->
+
+<!--<header id="header"></header>-->
+<!--&lt;!&ndash; Banner &ndash;&gt;-->
+<!--<div class="banner">Blog</div>-->
+
+<!--&lt;!&ndash; Logo &ndash;&gt;-->
+<!--&lt;!&ndash; <div class="logo-box">-->
+<!--    <img src="../images/main/ttgLogo.png" alt="Logo">-->
+<!--</div> &ndash;&gt;-->
+<!--<br><br><h2>Awards</h2>-->
+<!--&lt;!&ndash; Content &ndash;&gt;-->
+<!--<div class="container">-->
+<!--  <div class="grid">-->
+<!--    <div class="card">-->
+<!--      <a href="gallery.html/#vtapp" class="card">-->
+<!--        <img src="../images/gallery/vtapp/1.jpg" alt="Award">-->
+<!--        <div class="card-info">-->
+<!--          <p class="year">2024</p>-->
+<!--          <p class="title">VTAPP</p>-->
+<!--        </div>-->
+<!--      </a>-->
+<!--    </div>-->
+
+<!--    <div class="card">-->
+<!--      <a href="gallery.html/#vikas" class="card">-->
+<!--        <img src="../images/gallery/vikas/1.jpg" alt="Award">-->
+<!--        <div class="card-info">-->
+<!--          <p class="year">2023</p>-->
+<!--          <p class="title">Vikas</p>-->
+<!--        </div>-->
+<!--      </a>-->
+<!--    </div>-->
+
+<!--    <div class="card">-->
+<!--      <a href="gallery.html/#sbb" class="card">-->
+<!--        <img src="../images/gallery/sbb/1.JPG" alt="Award">-->
+<!--        <div class="card-info">-->
+<!--          <p class="year">2023</p>-->
+<!--          <p class="title">Seed brains Bangalore</p>-->
+<!--        </div>-->
+<!--      </a>-->
+<!--    </div>-->
+
+<!--    <div class="card">-->
+<!--      <a href="gallery.html/#rsv" class="card">-->
+<!--        <img src="../images/gallery/rsv/1.jpg" alt="Award">-->
+<!--        <div class="card-info">-->
+<!--          <p class="year">2023</p>-->
+<!--          <p class="title">Road show Vignan</p>-->
+<!--        </div>-->
+<!--      </a>-->
+<!--    </div>-->
+
+<!--    <div class="card">-->
+<!--      <a href="gallery.html/#isro" class="card">-->
+<!--        <img src="../images/gallery/isro/1.jpg" alt="Award">-->
+<!--        <div class="card-info">-->
+<!--          <p class="year">2023</p>-->
+<!--          <p class="title">ISRO Expo Vijayawada</p>-->
+<!--        </div>-->
+<!--      </a>-->
+<!--    </div>-->
+
+<!--    <div class="card">-->
+<!--      <a href="gallery.html/#happd" class="card">-->
+<!--        <img src="../images/gallery/happd/1.JPG" alt="Award">-->
+<!--        <div class="card-info">-->
+<!--          <p class="year">2023</p>-->
+<!--          <p class="title">HACK AP Power distribution</p>-->
+<!--        </div>-->
+<!--      </a>-->
+<!--    </div>-->
+
+<!--    <div class="card">-->
+<!--      <a href="gallery.html/#haptl" class="card">-->
+<!--        <img src="../images/gallery/haptl/1.jpg" alt="Award">-->
+<!--        <div class="card-info">-->
+<!--          <p class="year">2023</p>-->
+<!--          <p class="title">HACK AP Transport & Logistics</p>-->
+<!--        </div>-->
+<!--      </a>-->
+<!--    </div>-->
+
+<!--    <div class="card">-->
+<!--      <a href="gallery.html/#aleaph" class="card">-->
+<!--        <img src="../images/gallery/aleaph/1.jpg" alt="Award">-->
+<!--        <div class="card-info">-->
+<!--          <p class="year">2023</p>-->
+<!--          <p class="title">Aleaph</p>-->
+<!--        </div>-->
+<!--      </a>-->
+<!--    </div>-->
+
+<!--    <div class="card">-->
+<!--      <a href="gallery.html/#bem50" class="card">-->
+<!--        <img src="../images/gallery/bem50/1.jpg" alt="Award">-->
+<!--        <div class="card-info">-->
+<!--          <p class="year">2023</p>-->
+<!--          <p class="title">Blue economy mission 50</p>-->
+<!--        </div>-->
+<!--      </a>-->
+<!--    </div>-->
+
+<!--    <div class="card">-->
+<!--      <a href="gallery.html/#dst" class="card">-->
+<!--        <img src="../images/gallery/dst/1.jpg" alt="Award">-->
+<!--        <div class="card-info">-->
+<!--          <p class="year">2023</p>-->
+<!--          <p class="title">DST program</p>-->
+<!--        </div>-->
+<!--      </a>-->
+<!--    </div>-->
+
+<!--    <div class="card">-->
+<!--      <a href="gallery.html/#aivrsec" class="card">-->
+<!--        <img src="../images/gallery/aivrsec/1.jpg" alt="Award">-->
+<!--        <div class="card-info">-->
+<!--          <p class="year">2023</p>-->
+<!--          <p class="title">AI Innovative model Expo Vijayawada</p>-->
+<!--        </div>-->
+<!--      </a>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</div>-->
+
+<!--<br><h2>News</h2>-->
+
+<!--<div class="container">-->
+<!--  <div class="grid">-->
+<!--    <div class="card">-->
+<!--      <img src="../images/news/2.jpg" alt="News">-->
+<!--      <div class="card-info">-->
+<!--        <p class="year">08-02-2025</p>-->
+<!--        <p class="title">AI Autonomous hackathon</p>-->
+<!--      </div>-->
+<!--    </div>-->
+
+<!--    <div class="card">-->
+<!--      <img src="../images/news/3.jpg" alt="News">-->
+<!--      <div class="card-info">-->
+<!--        <p class="year">22-08-2024</p>-->
+<!--        <p class="title">Eenadu digital, Patamata</p>-->
+<!--      </div>-->
+<!--    </div>-->
+
+<!--    <div class="card">-->
+<!--      <img src="../images/news/1.jpg" alt="News">-->
+<!--      <div class="card-info">-->
+<!--        <p class="year">20-08-2024</p>-->
+<!--        <p class="title">Eenadu digital, Amaravati</p>-->
+<!--      </div>-->
+<!--    </div>-->
+
+<!--  </div>-->
+<!--</div>-->
+
+<!--&lt;!&ndash; Load Contact Content &ndash;&gt;-->
+<!--<div id="contact"></div>-->
+<!--<footer id="footer"></footer>-->
+<!--<script>-->
+<!--  fetch('../Partials/header.html')-->
+<!--          .then(res => res.text())-->
+<!--          .then(data => document.getElementById('header').innerHTML = data)-->
+<!--          .catch(err => console.error('Header load error:', err));-->
+<!--  fetch('../Partials/contact.html')-->
+<!--          .then(res => res.text())-->
+<!--          .then(data => document.getElementById('contact').innerHTML = data)-->
+<!--          .catch(err => console.error('Contact load error:', err));-->
+<!--  fetch('../Partials/footer.html')-->
+<!--          .then(res => res.text())-->
+<!--          .then(data => document.getElementById('footer').innerHTML = data)-->
+<!--          .catch(err => console.error('Footer load error:', err));-->
+<!--</script>-->
+
+<!--</body>-->
+<!--</html>-->

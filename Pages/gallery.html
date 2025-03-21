@@ -1,0 +1,246 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--  <meta charset="UTF-8">-->
+<!--  <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+<!--  <title>Gallery Page</title>-->
+<!--  <link rel="stylesheet" href="../css/styles.css">-->
+<!--  <script src="../JS/script.js" defer></script>-->
+<!--  <style>-->
+<!--    body {-->
+<!--      font-family: Arial, sans-serif;-->
+<!--      margin: 0;-->
+<!--      padding: 0;-->
+<!--      background-color: #f8f9fa;-->
+<!--      color: #333;-->
+<!--      text-align: center;-->
+<!--    }-->
+<!--    /* Banner */-->
+<!--    .banner {-->
+<!--      background-color: #034748;-->
+<!--      height: 180px;-->
+<!--      color: white;-->
+<!--      display: flex;-->
+<!--      justify-content: center;-->
+<!--      align-items: center;-->
+<!--      font-size: 2.2rem;-->
+<!--      font-weight: bold;-->
+<!--      text-transform: uppercase;-->
+<!--      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);-->
+<!--      text-align: center;-->
+<!--    }-->
+<!--    .section {-->
+<!--      margin: 40px auto;-->
+<!--      max-width: 1200px;-->
+<!--      padding: 0;-->
+<!--    }-->
+<!--    .heading {-->
+<!--      font-size: 2rem;-->
+<!--      font-weight: bold;-->
+<!--      display: inline-block;-->
+<!--      position: relative;-->
+<!--      margin-bottom: 20px;-->
+<!--    }-->
+<!--    .heading::after {-->
+<!--      content: "";-->
+<!--      display: block;-->
+<!--      width: 50%;-->
+<!--      height: 5px;-->
+<!--      background-color: green;-->
+<!--      position: absolute;-->
+<!--      bottom: -5px;-->
+<!--      left: 25%;-->
+<!--    }-->
+<!--    .gallery {-->
+<!--      display: grid;-->
+<!--      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));-->
+<!--      gap: 20px;-->
+<!--      padding: 20px;-->
+<!--    }-->
+<!--    .gallery img {-->
+<!--      width: 100%;-->
+<!--      height: auto;-->
+<!--      border-radius: 10px;-->
+<!--      object-fit: cover;-->
+<!--    }-->
+<!--    .content {-->
+<!--      margin-top: 20px;-->
+<!--      font-size: 1rem;-->
+<!--      line-height: 1.6;-->
+<!--      text-align: justify;-->
+<!--    }-->
+<!--    @media (min-width: 1024px) {-->
+<!--      .gallery {-->
+<!--        grid-template-columns: repeat(4, 1fr);-->
+<!--      }-->
+<!--    }-->
+<!--    @media (max-width: 1023px) {-->
+<!--      .gallery {-->
+<!--        grid-template-columns: repeat(2, 1fr);-->
+<!--      }-->
+<!--    }-->
+<!--    @media (max-width: 600px) {-->
+<!--      .gallery {-->
+<!--        grid-template-columns: repeat(1, 1fr);-->
+<!--      }-->
+<!--    }-->
+<!--  </style>-->
+<!--</head>-->
+<!--<body>-->
+
+<!--<div class="cursor-dot"></div>-->
+<!--<div class="cursor-drone">-->
+<!--  <img src="../images/main/drone.png" alt="Drone Image">-->
+<!--</div>-->
+
+<!--<header id="header"></header>-->
+<!--&lt;!&ndash; Banner &ndash;&gt;-->
+<!--<div class="banner">Gallery</div>-->
+
+<!--<div class="section" id="vtapp">-->
+<!--  <h2 class="heading">VTAPP 2024</h2>-->
+<!--  <div class="gallery">-->
+
+<!--    <img src="../images/gallery/vtapp/2.jpg" alt="Image 2">-->
+<!--    <img src="../images/gallery/vtapp/4.jpg" alt="Image 4">-->
+<!--    <img src="../images/gallery/vtapp/5.jpg" alt="Image 5">-->
+<!--    <img src="../images/gallery/vtapp/6.jpg" alt="Image 6">-->
+<!--    <img src="../images/gallery/vtapp/8.jpg" alt="Image 8">-->
+<!--    <img src="../images/gallery/vtapp/9.jpg" alt="Image 9">-->
+<!--    <img src="../images/gallery/vtapp/10.jpg" alt="Image 10">-->
+<!--    <img src="../images/gallery/vtapp/11.jpg" alt="Image 11">-->
+<!--    <img src="../images/gallery/vtapp/12.jpg" alt="Image 12">-->
+<!--    <img src="../images/gallery/vtapp/13.jpg" alt="Image 13">-->
+
+<!--  </div>-->
+<!--  <p class="content">This is some random write-up for Gallery One. It provides a description or additional context about the images above.</p>-->
+<!--</div>-->
+
+<!--<div class="section" id="vikas">-->
+<!--  <h2 class="heading">VIKAS</h2>-->
+<!--  <div class="gallery">-->
+<!--    <img src="../images/gallery/vikas/1.jpg" alt="Image 1">-->
+<!--    <img src="../images/gallery/vikas/2.jpg" alt="Image 2">-->
+<!--    <img src="../images/gallery/vikas/3.jpg" alt="Image 3">-->
+<!--    <img src="../images/gallery/vikas/4.jpg" alt="Image 4">-->
+<!--    <img src="../images/gallery/vikas/5.jpg" alt="Image 5">-->
+<!--  </div>-->
+<!--  <p class="content">This is some random write-up for Gallery Two. It provides a description or additional context about the images above.</p>-->
+<!--</div>-->
+
+<!--<div class="section" id="sbb">-->
+<!--  <h2 class="heading">Seed brains Bangalore</h2>-->
+<!--  <div class="gallery">-->
+<!--    <img src="../images/gallery/sbb/2.JPG" alt="Image 2">-->
+<!--    <img src="../images/gallery/sbb/1.JPG" alt="Image 1">-->
+<!--    <img src="../images/gallery/sbb/3.JPG" alt="Image 3">-->
+<!--    <img src="../images/gallery/sbb/4.JPG" alt="Image 4">-->
+<!--  </div>-->
+<!--  <p class="content">This is some random write-up for Gallery One. It provides a description or additional context about the images above.</p>-->
+<!--</div>-->
+
+<!--<div class="section" id="rsv">-->
+<!--  <h2 class="heading">Road show Vignan</h2>-->
+<!--  <div class="gallery">-->
+<!--    <img src="../images/gallery/rsv/1.jpg" alt="Image 1">-->
+<!--    <img src="../images/gallery/rsv/2.jpg" alt="Image 2">-->
+<!--  <p class="content">This is some random write-up for Gallery One. It provides a description or additional context about the images above.</p>-->
+<!--</div>-->
+
+<!--<div class="section" id="isro">-->
+<!--  <h2 class="heading">ISRO Expo Vijayawada</h2>-->
+<!--  <div class="gallery">-->
+<!--    <img src="../images/gallery/isro/1.jpg" alt="Image 1">-->
+<!--    <img src="../images/gallery/isro/2.jpg" alt="Image 2">-->
+<!--    <img src="../images/gallery/isro/3.jpg" alt="Image 3">-->
+<!--    <img src="../images/gallery/isro/4.jpg" alt="Image 4">-->
+<!--    <img src="../images/gallery/isro/5.jpg" alt="Image 5">-->
+<!--  </div>-->
+<!--  <p class="content">This is some random write-up for Gallery One. It provides a description or additional context about the images above.</p>-->
+<!--</div>-->
+
+<!--<div class="section" id="happd">-->
+<!--  <h2 class="heading">HACK AP Power distribution</h2>-->
+<!--  <div class="gallery">-->
+<!--    <img src="../images/gallery/happd/1.JPG" alt="Image 1">-->
+<!--    <img src="../images/gallery/happd/2.JPG" alt="Image 2">-->
+<!--    <img src="../images/gallery/happd/3.JPG" alt="Image 3">-->
+<!--  </div>-->
+<!--  <p class="content">This is some random write-up for Gallery One. It provides a description or additional context about the images above.</p>-->
+<!--</div>-->
+
+<!--<div class="section" id="haptl">-->
+<!--  <h2 class="heading">HACK AP Transport & Logistics</h2>-->
+<!--  <div class="gallery">-->
+<!--    <img src="../images/gallery/haptl/1.jpg" alt="Image 1">-->
+<!--    <img src="../images/gallery/haptl/2.jpg" alt="Image 2">-->
+<!--    <img src="../images/gallery/haptl/3.jpg" alt="Image 3">-->
+<!--  </div>-->
+<!--  <p class="content">This is some random write-up for Gallery One. It provides a description or additional context about the images above.</p>-->
+<!--</div>-->
+
+<!--<div class="section" id="aleaph">-->
+<!--  <h2 class="heading">Aleaph</h2>-->
+<!--  <div class="gallery">-->
+<!--    <img src="../images/gallery/aleaph/1.jpg" alt="Image 1">-->
+<!--    <img src="../images/gallery/aleaph/3.jpg" alt="Image 3">-->
+<!--    <img src="../images/gallery/aleaph/4.jpg" alt="Image 4">-->
+<!--    <img src="../images/gallery/aleaph/5.jpg" alt="Image 5">-->
+<!--    <img src="../images/gallery/aleaph/6.JPG" alt="Image 6">-->
+<!--    <img src="../images/gallery/aleaph/7.jpg" alt="Image 7">-->
+<!--  </div>-->
+<!--  <p class="content">This is some random write-up for Gallery One. It provides a description or additional context about the images above.</p>-->
+<!--</div>-->
+
+<!--<div class="section" id="bem50">-->
+<!--  <h2 class="heading">Blue economy mission 50</h2>-->
+<!--  <div class="gallery">-->
+<!--    <img src="../images/gallery/bem50/2.jpg" alt="Image 2">-->
+<!--    <img src="../images/gallery/bem50/1.jpg" alt="Image 1">-->
+<!--    <img src="../images/gallery/bem50/4.jpg" alt="Image 4">-->
+<!--    <img src="../images/gallery/bem50/3.jpeg" alt="Image 3">-->
+<!--  </div>-->
+<!--  <p class="content">This is some random write-up for Gallery One. It provides a description or additional context about the images above.</p>-->
+<!--</div>-->
+
+<!--<div class="section" id="dst">-->
+<!--  <h2 class="heading">DST program</h2>-->
+<!--  <div class="gallery">-->
+<!--    <img src="../images/gallery/dst/1.jpg" alt="Image 1">-->
+<!--  </div>-->
+<!--  <p class="content">This is some random write-up for Gallery One. It provides a description or additional context about the images above.</p>-->
+<!--</div>-->
+
+<!--<div class="section" id="aivrsec">-->
+<!--  <h2 class="heading">AI Innovative model Expo Vijayawada</h2>-->
+<!--  <div class="gallery">-->
+<!--    <img src="../images/gallery/aivrsec/3.jpg" alt="Image 3">-->
+<!--    <img src="../images/gallery/aivrsec/2.jpg" alt="Image 2">-->
+<!--    <img src="../images/gallery/aivrsec/5.jpg" alt="Image 5">-->
+<!--    <img src="../images/gallery/aivrsec/1.jpg" alt="Image 1">-->
+<!--  </div>-->
+<!--  <p class="content">This is some random write-up for Gallery One. It provides a description or additional context about the images above.</p>-->
+<!--</div>-->
+
+<!--&lt;!&ndash; Load Contact Content &ndash;&gt;-->
+<!--<div id="contact"></div>-->
+<!--<footer id="footer"></footer>-->
+<!--<script>-->
+<!--  fetch('../Partials/header.html')-->
+<!--          .then(res => res.text())-->
+<!--          .then(data => document.getElementById('header').innerHTML = data)-->
+<!--          .catch(err => console.error('Header load error:', err));-->
+<!--  fetch('../Partials/contact.html')-->
+<!--          .then(res => res.text())-->
+<!--          .then(data => document.getElementById('contact').innerHTML = data)-->
+<!--          .catch(err => console.error('Contact load error:', err));-->
+<!--  fetch('../Partials/footer.html')-->
+<!--          .then(res => res.text())-->
+<!--          .then(data => document.getElementById('footer').innerHTML = data)-->
+<!--          .catch(err => console.error('Footer load error:', err));-->
+<!--</script>-->
+
+<!--<script src="/JS/script.js" onerror="console.error('Failed to load script.js');"></script>-->
+
+<!--</body>-->
+<!--</html>-->
